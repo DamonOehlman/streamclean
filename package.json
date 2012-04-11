@@ -12,7 +12,8 @@
   },
 
   "devDependencies": {
-    "expect.js": "0.1.x"
+    "expect.js": "0.1.x",
+    "mocha": "*"
   },
 
   "repository": {
