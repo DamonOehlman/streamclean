@@ -50,6 +50,14 @@ Cleaner.prototype._cleanEncoded = function(data, encoding) {
         }
         else if (testFn) {
             stripLine = testFn(line);
+            
+            // if the stripline result is not a boolean (and not undefined)
+            // then the line has been modified and should pass through in it's modified form
+            // ... we'll tweak some variables to make it so
+            if (typeof stripLine != 'undefined' && typeof stripLine != 'boolean') {
+                line = stripLine;
+                stripLine = false;
+            }
         }
 
         // only push the line through if it hasn't been stripped
