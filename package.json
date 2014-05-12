@@ -1,20 +1,17 @@
 {
   "name": "streamclean",
   "description": "Remove unwanted lines from a stream",
-  "author": "Damon Oehlman <damon.oehlman@sidelab.com>",
-  "tags": [
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "keywords": [
     "stream",
     "cleaner"
   ],
   "version": "0.1.0",
   "main": "index.js",
-  "engines": {
-    "node": ">= 0.6.x < 0.9.0"
-  },
   "dependencies": {},
   "devDependencies": {
-    "expect.js": "0.1.x",
-    "mocha": "1.5.x"
+    "expect.js": "~0.3",
+    "mocha": "^1"
   },
   "repository": {
     "type": "git",
@@ -24,7 +21,12 @@
     "url": "http://github.com/DamonOehlman/streamclean/issues"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "mocha --reporter spec"
   },
-  "contributors": []
+  "homepage": "https://github.com/DamonOehlman/streamclean",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "license": "MIT"
 }
